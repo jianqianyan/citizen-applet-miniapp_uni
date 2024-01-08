@@ -18,10 +18,6 @@ export default {
         index: 2,
         visible: false,
       });
-      uni.setTabBarItem({
-        index: 3,
-        visible: false,
-      });
     }
     // 获取导航高度；
     uni.getSystemInfo({

@@ -92,7 +92,7 @@
 
     <!-- 附近药店内容 -->
     <view class="nearby-drug-info">
-      <view class="tab-menu-wrapper">
+      <!-- <view class="tab-menu-wrapper">
         <custom-tab-panel
           :tabList="tabList"
           :tabHeight="96"
@@ -100,7 +100,7 @@
           @changeTab="handleChangetab"
           @getScrollH="getScrollH"
         />
-      </view>
+      </view> -->
       <!-- 附近药店列表 -->
       <view class="tab-item-content">
         <view class="drug-list" @tap="toDrugStoreDetl">

@@ -204,12 +204,6 @@
         "selectedIconPath": "static/images/tab_icons/drugstore_active.png"
       },
       {
-        "pagePath": "pages/tab-MyAdvice/index",
-        "text": "我的咨询",
-        "iconPath": "static/images/tab_icons/myAdvice.png",
-        "selectedIconPath": "static/images/tab_icons/myAdvice_active.png"
-      },
-      {
         "pagePath": "pages/tab-MyCenter/index",
         "text": "个人中心",
         "iconPath": "static/images/tab_icons/my_cenetr.png",
