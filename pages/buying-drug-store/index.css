@@ -1,0 +1,333 @@
+/* pages/buying-drug-store/index.wxss */
+.container {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* pages/drug-details/index.wxss */
+.profile-cotent-wrapper {
+  position: absolute;
+  margin: 50rpx 0 0 0;
+}
+
+.drug-detail-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.background-placeholder {
+  background: rgb(9, 144, 255);
+  height: 250rpx;
+  width: 100%;
+}
+
+
+.profile-title {
+  font-size: 34rpx;
+  font-family: SourceHanSansCN;
+  font-weight: 500;
+  color: #555555;
+  overflow: hidden;
+  -webkit-line-clamp: 1;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+.profile-info {
+  width: 680rpx;
+  /* min-height: 520rpx; */
+  background: #ffffff;
+  padding: 28rpx 39rpx;
+  margin-bottom: 38rpx;
+  display: flex;
+}
+
+.drug-store-info {
+  flex: 1;
+}
+
+.drug-store-info-wrapper {
+  margin-top: 26rpx;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.label-list-wrapper {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 14rpx 0;
+}
+
+.label-list-wrapper>view {
+  margin-right: 10rpx;
+}
+
+.buying-reg-link {
+  font-size: 26rpx;
+  font-family: SourceHanSansCN;
+  font-weight: 400;
+  color: #3e77ff;
+}
+
+.sidebar-wrapper {
+  width: 194rpx;
+  height: calc(100vh - 204rpx);
+  background: transparent;
+  position: fixed;
+  left: 0;
+  top: 204rpx;
+  border-radius: 0 20rpx 20rpx 0;
+  overflow: hidden;
+}
+
+.sidebar-wrapper .sidebar-list-item:last-child {
+  border-bottom: none;
+  border-radius: 0 0 20rpx 0;
+}
+
+.sidebar-list-item {
+  min-height: 105rpx;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 30rpx;
+  background-color: #fff;
+  border-bottom: 2rpx solid #f2f2f2;
+  font-size: 26rpx;
+  font-family: SourceHanSansCN;
+  font-weight: 400;
+  color: #666666;
+  transition: 0.2s all linear;
+}
+
+.selected {
+  color: #3e77ff;
+  background: #fdfdfd;
+}
+
+.scroll-style {
+  padding: 96rpx 5% 5%;
+  box-sizing: border-box;
+  height: calc(100vh - 264rpx);
+}
+
+.drug-shop-list {
+  padding: 23rpx;
+  box-sizing: border-box;
+  border-radius: 20rpx;
+  overflow: hidden;
+  background: #fff;
+  margin: 30rpx 0 0 0;
+}
+
+.drug-wrapper {
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* 缩略图 */
+.drug-thumb {
+  width: 178rpx;
+  height: 178rpx;
+  border-radius: 16rpx;
+  overflow: hidden;
+}
+
+.drug-info-wrapper {
+  margin-left: 26rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.drug-name {
+  font-size: 24rpx;
+  font-family: SourceHanSansCN;
+  font-weight: 400;
+  color: #555555;
+  margin-bottom: 15rpx;
+}
+
+.line-info-wrapper {
+  display: flex;
+  align-items: last baseline;
+  margin-top: 15rpx;
+}
+
+.label,
+.content {
+  font-size: 20rpx;
+  font-family: SourceHanSansCN;
+  font-weight: 400;
+  color: #8692a4;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.label {
+  margin-right: 12rpx;
+  flex-shrink: 0;
+}
+
+.drug-list-item {
+  /* width: 498rpx; */
+  background: #ffffff;
+  padding: 30rpx;
+  box-sizing: border-box;
+  border-bottom: rgba(0, 0, 0, 0.05) 1px solid
+  ;
+}
+
+.drug-store-pic {
+  width: 207rpx;
+  height: 220rpx;
+  overflow: hidden;
+  margin: 15rpx 21rpx 15rpx 15rpx;
+  border-radius: 16rpx;
+}
+
+.drug-bus-time-info>text {
+  font-size: 26rpx;
+  font-family: SourceHanSansCN;
+  font-weight: 400;
+  color: #8692a4;
+}
+
+.drug-bus-time-icon {
+  color: #8692a4;
+  margin-right: 13rpx;
+  font-size: 26rpx;
+}
+
+.drug-message {
+  background: #fff;
+  border-radius: 14rpx;
+  overflow: hidden;
+  margin: 28rpx 0 0 0;
+  padding: 28rpx;
+  box-sizing: border-box;
+}
+
+.drug-address-box {
+  display: flex;
+}
+
+.drug-address-box-text {
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  font-size: 28rpx;
+  flex: 1;
+}
+
+.drug-address-box-button {
+  display: flex;
+  align-items: center;
+}
+
+.drug-address-box-icon {
+  width: 40rpx;
+  height: 40rpx;
+  margin: 0 28rpx;
+}
+
+.filed {
+  display: flex;
+  align-items: center;
+  padding: 13rpx 11rpx;
+  border-bottom: 1rpx solid #dedede;
+}
+
+.filed-column {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.filed-content {
+  flex: 1;
+  min-height: 50rpx;
+  font-size: 28rpx;
+  font-family: SourceHanSansCN;
+  font-weight: 400;
+  color: rgba(34, 34, 34, 0.60);
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.last-filed {
+  border-bottom: none;
+  padding: 13rpx 11rpx 0rpx;
+}
+
+.filed-label {
+  color: rgba(34, 34, 34, 1);
+  font-size: 28rpx;
+}
+
+.title-box {
+  margin: 28rpx 0;
+  color: rgba(0, 0, 0, 0.90);
+  font-size: 28rpx;
+  font-weight: bold;
+  display: flex;
+}
+
+.title-icon {
+  width: 10rpx;
+  height: 40rpx;
+  background: #1c71ff;
+  overflow: hidden;
+  margin: 0 0.75rem 0 0;
+}
+
+.online-doctor-list-item {
+  display: flex;
+  padding: 28rpx;
+  box-sizing: border-box;
+}
+
+.doctor-avatar {
+  width: 96rpx;
+  height: 96rpx;
+  border-radius: 18rpx;
+  overflow: hidden;
+  margin: 0 14rpx 0 0;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.doctor-profile-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  /* 隐藏超出部分 */
+  white-space: nowrap;
+  /* 不换行 */
+  text-overflow: ellipsis;
+  /* 超出部分显示省略号 */
+}
+
+.doctor-name {
+  color: rgba(34, 34, 34, 1);
+  font-size: 28rpx;
+}
+
+.doctor-info-wrapper {
+  color: rgba(34, 34, 34, 0.60);
+  font-size: 26rpx;
+}
+
+.doctor-info-wrapper-text {
+  color: rgba(34, 34, 34, 0.60);
+  font-size: 26rpx;
+}

@@ -1,0 +1,58 @@
+/* pages/buying-drug-details/index.wxss */
+.buying-drug-wrapper {
+    position: relative;
+}
+
+.profile-cotent-wrapper {
+    position: absolute;
+    transform: translate(-50%, 37rpx);
+    /* top: 325rpx; */
+    left: 50%;
+}
+
+.profile-info {
+    width: 680rpx;
+    /* min-height: 520rpx; */
+    background: #ffffff;
+    padding: 15rpx 35rpx;
+    margin-bottom: 38rpx;
+}
+
+.profile-title {
+    font-size: 34rpx;
+    font-family: SourceHanSansCN;
+    font-weight: 400;
+    color: #3e77ff;
+}
+
+.filed {
+    display: flex;
+    align-items: baseline;
+    padding: 30rpx 11rpx;
+    border-bottom: 1rpx solid #dedede;
+}
+
+.filed-content {
+    flex: 1;
+    font-size: 26rpx;
+    font-family: SourceHanSansCN;
+    font-weight: 400;
+    color: #8692a4;
+    margin-left: 28rpx;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.last-filed {
+    border-bottom: none;
+    /* padding: 0rpx 11rpx 13rpx; */
+}
+
+.label {
+    font-size: 28rpx;
+    font-family: SourceHanSansCN;
+    font-weight: 400;
+    color: #666666;
+}

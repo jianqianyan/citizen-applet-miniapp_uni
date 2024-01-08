@@ -1,0 +1,169 @@
+{
+  "setting": {
+    "compileHotReLoad": true
+  },
+  "condition": {
+    "miniprogram": {
+      "list": [
+        {
+          "name": "tab-个人中心",
+          "pathName": "pages/tab-MyCenter/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "tab-我的咨询",
+          "pathName": "pages/tab-MyAdvice/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "首页",
+          "pathName": "pages/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "个人信息",
+          "pathName": "pages/profile/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "购药详情",
+          "pathName": "pages/buying-drug-details/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "许可证资质信息",
+          "pathName": "pages/licence-quality-info/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "药店详情",
+          "pathName": "pages/drugSore-detail/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "药品追溯详情",
+          "pathName": "pages/drug-ascend-detail/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "购药登记",
+          "pathName": "pages/buying-drug-reg/index",
+          "query": "enterpriseId=f5640408f52911eb8dfa52540024473f",
+          "scene": null
+        },
+        {
+          "name": "药品追溯",
+          "pathName": "pages/drug-ascend/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "咨询聊天（正在进行）",
+          "pathName": "pages/advice-chat/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "药品详情",
+          "pathName": "pages/drug-details/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "药品、药店查询",
+          "pathName": "pages/medicine-inquire/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "购药商店",
+          "pathName": "pages/buying-drug-store/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "附近药店",
+          "pathName": "pages/nearby-drug-store/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "tab-药品知识服务",
+          "pathName": "pages/tab-drug-knowledge/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "购药记录",
+          "pathName": "pages/buying-drug-record/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "药品知识内页",
+          "pathName": "pages/drug-knowledge/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "抗疫购药登记临时页面",
+          "pathName": "pages/temporary-buying-reg/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "临时首页",
+          "pathName": "pages/temporary-index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "商品码药品追溯详情",
+          "pathName": "pages/drug-goods-ascend-detail/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/index/index",
+          "pathName": "pages/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/index/index",
+          "pathName": "pages/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/index/index",
+          "pathName": "pages/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/index/index",
+          "pathName": "pages/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "更新",
+          "pathName": "pages/tab-MyCenter/index",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  },
+  "description": "项目私有配置文件。此文件中的内容将覆盖 project.config.json 中的相同字段。项目的改动优先同步到此文件中。详见文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/projectconfig.html",
+  "projectname": "citizen-applet-miniapp"
+}

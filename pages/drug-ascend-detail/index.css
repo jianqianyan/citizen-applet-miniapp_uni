@@ -1,0 +1,154 @@
+/* pages/drug-ascend-detail/index.wxss */
+.profile-cotent-wrapper {
+    position: absolute;
+    transform: translate(-50%, 37rpx);
+    /* top: 325rpx; */
+    left: 50%;
+}
+
+.profile-title {
+    font-size: 34rpx;
+    font-family: SourceHanSansCN;
+    font-weight: 400;
+    color: #666666;
+}
+
+.profile-info {
+    width: 680rpx;
+    /* min-height: 520rpx; */
+    background: #ffffff;
+    padding: 15rpx 35rpx;
+    margin-bottom: 38rpx;
+}
+.filed {
+    display: flex;
+    align-items: baseline;
+    padding: 30rpx 11rpx;
+    border-bottom: 1rpx solid #dedede;
+}
+
+.filed-content {
+    flex: 1;
+    /* min-height: 90rpx; */
+    font-size: 26rpx;
+    font-family: SourceHanSansCN;
+    font-weight: 400;
+    color: #8692a4;
+    margin-left: 28rpx;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.last-filed {
+    border-bottom: none;
+    padding: 0rpx 11rpx 13rpx;
+}
+
+.label {
+    font-size: 28rpx;
+    font-family: SourceHanSansCN;
+    font-weight: 400;
+    color: #666666;
+    flex-basis: 35%;
+}
+
+/* 批准文号时间日期 */
+.filed-content > text {
+    color: #8692a4;
+    font-size: 26rpx;
+}
+
+.date {
+    margin-right: 10rpx;
+}
+.ascend-step {
+    margin-top: 33rpx;
+}
+
+.step-wrapper {
+    margin: 28rpx 0 42rpx;
+}
+
+.step-item {
+    border-left: 1rpx solid #e5e5e5;
+    min-height: 150rpx;
+    position: relative;
+    padding-bottom: 47rpx;
+}
+
+.last-step {
+    padding-bottom: 0 !important;
+}
+
+.step-wrapper:last-child {
+    padding-bottom: 0;
+}
+
+.step-cicrle {
+    position: absolute;
+    top: 20rpx;
+    left: -25rpx;
+    width: 47rpx;
+    height: 47rpx;
+    background: linear-gradient(0deg, #0c9bff, #0066ff);
+    box-shadow: 0px 0px 6px 0px #85b9fc;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.finish {
+    background: linear-gradient(45deg, #febd56, #ffa53b);
+    box-shadow: 0px 0px 6px 0px #ffaf3e;
+}
+
+.step-cicrle-inner {
+    width: 23.5rpx;
+    height: 23.5rpx;
+    background: #ffffff;
+    border-radius: 50%;
+}
+
+.step-matter {
+    margin-left: 50rpx;
+    padding-top: 17rpx;
+}
+
+.step-title {
+    width: 160rpx;
+    height: 60rpx;
+    background: #f8f8f8;
+    border-radius: 24rpx;
+    color: #067eff;
+    text-align: center;
+    line-height: 60rpx;
+    font-size: 32rpx;
+    margin-bottom: 27rpx;
+}
+.step-content {
+    margin-left: 13rpx;
+}
+
+.step-content-item {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 27rpx;
+}
+.step-label {
+    font-size: 26rpx;
+    margin-right: 42rpx;
+    flex-shrink: 0;
+    color: #666666;
+    flex-basis: 29%;
+}
+
+.step-details {
+    font-size: 26rpx;
+    color: #7a89a0;
+    word-break: break-all;
+    word-wrap: break-word;
+}

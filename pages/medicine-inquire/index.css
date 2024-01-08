@@ -1,0 +1,417 @@
+/* pages/medicine-inquire/index.wxss */
+.inquire-wrapper {
+    height: 132rpx;
+    background: linear-gradient(0deg, #0066ff, #0990ff);
+    padding: 32rpx 34rpx;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.holder {
+    height: 214rpx;
+    width: 100%;
+}
+
+.search-wrapper {
+    flex: 1;
+    width: 510rpx;
+    padding: 23rpx;
+    height: 68rpx;
+    background: #f2faff;
+    display: flex;
+    align-items: center;
+    border-radius: 34rpx;
+}
+.input-holder {
+    color: #0785ff;
+    font-weight: 400;
+    font-family: SourceHanSansCN;
+}
+.search-wrapper > input {
+    font-size: 26rpx;
+}
+.search-icon {
+    color: #0785ff;
+    margin-right: 15rpx;
+}
+
+.search-cancel {
+    color: #ffffff;
+    margin-left: 21rpx;
+    transition: all 0.2s;
+}
+
+.cancel {
+    width: 0rpx;
+    visibility: hidden;
+}
+.show {
+    /* width: 80rpx; */
+    visibility: initial;
+}
+
+.search-tab {
+    width: 100%;
+    height: 82rpx;
+    border-bottom: 1rpx solid #e1e1e1;
+}
+
+.tab-list-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.search-result-holder {
+    width: 100%;
+    height: 82rpx;
+    background-color: #0066ff;
+    position: fixed;
+    top: 132rpx;
+    left: 0;
+}
+.tab-list-item {
+    color: #8b97a8;
+    text-align: center;
+    height: 100%;
+    flex-basis: 50%;
+    line-height: 82rpx;
+    position: relative;
+}
+.tab-list-item::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    bottom: 0;
+    left: 100%;
+    height: 3rpx;
+    transition: 0.2s all linear;
+    background: #0066ff;
+}
+.selected {
+    color: #0066ff;
+}
+.selected::before {
+    width: 100%;
+    left: 0;
+}
+
+.selected ~ .tab-list-item::before {
+    left: 0;
+}
+
+.scroll-style {
+    width: 100%;
+    height: calc(100vh - 212rpx);
+}
+.scroll-style > scroll-view {
+    height: 100%;
+    padding-bottom: constant(safe-area-inset-bottom);
+    padding-bottom: env(safe-area-inset-bottom);
+}
+
+.profile-cotent-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 16rpx;
+    /* top: 325rpx; */
+}
+
+.profile-info {
+    width: 680rpx;
+    /* min-height: 520rpx; */
+    background: #ffffff;
+    padding: 15rpx;
+    margin-bottom: 38rpx;
+    position: relative;
+}
+
+.bubble-holder {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.label-wrapper {
+    margin-top: 41rpx;
+    padding: 0 41rpx;
+}
+
+.label-title-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search-label-title {
+    font-size: 32rpx;
+    font-family: SourceHanSansCN;
+    font-weight: 400;
+    color: #555555;
+}
+
+.icon-lajitongshanchu {
+    color: #c0c0c0;
+}
+
+/* 历史查询 */
+.label-filed {
+    margin-top: 31rpx;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.history-hint {
+    color: #8692a4;
+    font-size: 28rpx;
+}
+
+.label-style {
+    background: #ffffff;
+    box-shadow: 0px 0px 8px 0px rgba(58, 92, 241, 0.21);
+    border-radius: 16rpx;
+    font-size: 24rpx;
+    font-family: SourceHanSansCN;
+    font-weight: 400;
+    color: #8692a4;
+    padding: 17rpx 26rpx;
+    margin-bottom: 21rpx;
+    margin-right: 17rpx;
+}
+
+.tag-filed {
+    margin-top: 31rpx;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.tag-style {
+    display: inline-block;
+    border: 1rpx solid #afaeae;
+    border-radius: 7rpx;
+    font-size: 24rpx;
+    font-family: SourceHanSansCN;
+    font-weight: 400;
+    color: #8692a4;
+    padding: 13rpx 31rpx;
+}
+.tag-filed-item {
+    /* flex-basis: 25%; */
+    margin-bottom: 14rpx;
+    text-align: center;
+    margin: 0 12rpx 24rpx;
+}
+
+/* 药品搜索结果 */
+.drug-wrapper {
+    display: flex;
+    width: 100%;
+}
+/* 缩略图 */
+.drug-thumb {
+    width: 206rpx;
+    height: 194rpx;
+    border-radius: 16rpx;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.drug-info-wrapper {
+    margin-left: 26rpx;
+    display: flex;
+    flex: 1;
+    flex-direction: column; 
+    min-width: 0;
+    word-wrap: break-word;
+    word-break: break-all;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.drug-name {
+    font-size: 28rpx;
+    font-family: SourceHanSansCN;
+    font-weight: 400;
+    color: #555555;
+    margin-bottom: 15rpx;
+}
+
+.line-info-wrapper {
+    display: flex;
+    /* align-items: last baseline; */
+    margin-top: 15rpx;
+    width: 100%;
+}
+
+.label,
+.content {
+    font-size: 24rpx;
+    font-family: SourceHanSansCN;
+    font-weight: 400;
+    color: #8692a4;
+}
+.content{ 
+  flex: 1;
+  word-wrap: break-word;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.label {
+    margin-right: 12rpx;
+    flex-shrink: 0;
+}
+
+/* 药店搜索信息 */
+
+.cur-sold-item {
+    position: relative;
+    background: #ffffff;
+    /* overflow: hidden; */
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.drug-store-pic {
+    width: 201rpx;
+    height: 214rpx;
+    overflow: hidden;
+    margin-right: 15rpx;
+    border-radius: 16rpx;
+    flex-shrink: 0;
+}
+
+.drug-store-info {
+    /* flex: 1; */
+    /* padding-right: 29rpx; */
+    display: flex;
+    flex-direction: column;
+}
+
+.drug-store-address {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.address-text-style {
+    width: 385rpx;
+    font-size: 30rpx;
+    font-family: SourceHanSansCN;
+    font-weight: 500;
+    color: #555555;
+}
+
+.icon-more {
+    width: 16rpx;
+    height: 28rpx;
+}
+
+/* 药店标签 */
+.drug-label-wrapper {
+    display: flex;
+    align-items: center;
+    margin-top: 18rpx;
+    flex-wrap: wrap;
+}
+
+.drug-label-wrapper > text {
+    margin-right: 10rpx;
+}
+
+/* 其他信息 */
+.drug-other-wrapper {
+    display: flex;
+    align-items: baseline;
+    margin-top: 25rpx;
+    justify-content: space-between;
+}
+
+.drug-other-left {
+    display: flex;
+    flex-direction: column;
+    /* flex-shrink: 0; */
+    flex-basis: 75%;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.drug-other-right {
+    flex-basis: 25%;
+}
+
+/* 营业时间 */
+.drug-bus-time {
+    display: flex;
+    align-items: center;
+}
+
+.drug-bus-time > text {
+    font-size: 26rpx;
+    font-family: SourceHanSansCN;
+    font-weight: 400;
+    color: #8692a4;
+}
+
+.drug-bus-time-icon {
+    color: #8692a4;
+    margin-right: 13rpx;
+    font-size: 26rpx;
+}
+
+.drug-bus-time-info > text {
+    font-size: 26rpx;
+    font-family: SourceHanSansCN;
+    font-weight: 400;
+    color: #8692a4;
+}
+
+.drug-bus-address {
+    display: flex;
+    align-items: baseline;
+    margin-top: 19rpx;
+}
+.drug-bus-address-info {
+    font-size: 26rpx;
+    font-family: SourceHanSansCN;
+    font-weight: 400;
+    color: #8692a4;
+}
+.drug-dist {
+    text-align: right;
+    font-size: 24rpx;
+    font-family: SourceHanSansCN;
+    font-weight: bold;
+    color: #3e77ff;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.icon-jiantou {
+    transform: rotate(-90deg);
+}
+
+.empty-wrapper {
+    /* width: 100%;
+    height: 500rpx; */
+}
+
+.empty-icon {
+    width: 100%;
+    height: 500rpx;
+}
+
+.empty-hint {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    color: #0990ff;
+    font-size: 36rpx;
+}

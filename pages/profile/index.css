@@ -1,0 +1,58 @@
+/* pages/profile/index.wxss */
+.profile-wrapper {
+    position: relative;
+}
+
+.profile-info {
+    width: 680rpx;
+    min-height: 350rpx;
+    background: #ffffff;
+    padding: 15rpx 35rpx 48rpx;
+}
+
+.profile-cotent-wrapper {
+    position: absolute;
+    transform: translate(-50%, 37rpx);
+    left: 50%;
+}
+
+/* 内容区域  common*/
+.filed {
+    display: flex;
+    align-items: center;
+    padding: 13rpx 11rpx;
+    border-bottom: 1rpx solid #dedede;
+}
+
+.filed-content {
+    flex: 1;
+    min-height: 90rpx;
+    font-size: 26rpx;
+    font-family: SourceHanSansCN;
+    font-weight: 400;
+    color: #8692a4;
+    margin-right: 10rpx;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.label {
+    font-size: 28rpx;
+    font-family: SourceHanSansCN;
+    font-weight: 400;
+    color: #666666;
+}
+
+/* 头像 */
+.avatar-image-wrapper {
+    width: 100rpx;
+    height: 100rpx;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 12rpx;
+}
+
+.arrows {
+    transform: rotate(-90deg);
+}

@@ -1,0 +1,70 @@
+/* pages/drug-ascend/index.wxss */
+.profile-cotent-wrapper {
+    position: absolute;
+    transform: translate(-50%, 37rpx);
+    /* top: 325rpx; */
+    left: 50%;
+}
+
+.profile-info {
+    width: 680rpx;
+    /* min-height: 520rpx; */
+    background: #ffffff;
+    padding: 15rpx 35rpx;
+    margin-bottom: 38rpx;
+}
+
+.profile-title {
+    font-size: 34rpx;
+    font-family: SourceHanSansCN;
+    font-weight: 400;
+    color: #3e77ff;
+}
+
+.scancode {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 28rpx;
+}
+
+.icon-saoma {
+    color: #a1a1a1;
+    font-size: 60rpx;
+}
+
+.scancode-input-wrapper {
+    width: 600rpx;
+    height: 80rpx;
+    border: 2rpx solid #dedede;
+    border-radius: 16rpx;
+    margin-bottom: 26.5rpx;
+}
+.scancode-input-wrapper input {
+    font-size: 24rpx;
+    padding-left: 28rpx;
+}
+.button-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    /* position: absolute; */
+    /* transform: translateX(-50%); */
+    /* width: 150rpx; */
+    color: #3a5cf1;
+}
+.button-wrapper > view {
+    line-height: 86rpx;
+    /* background: linear-gradient(45deg, #568BFE, #3B74FF); */
+    /* border-radius: 16rpx; */
+    color: #3a5cf1;
+    font-weight: 400;
+    min-width: 150rpx;
+    text-align: center;
+    padding: 0 24rpx !important;
+    font-size: 30rpx !important;
+}
+
+.button-wrapper > view:active {
+    color: #173ff3;
+}

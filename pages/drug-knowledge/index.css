@@ -1,0 +1,52 @@
+/* pages/drug-knowledge/index.wxss */
+
+.profile-cotent-wrapper {
+    position: absolute;
+    transform: translate(-50%, 37rpx);
+    /* top: 325rpx; */
+    left: 50%;
+}
+
+.profile-info {
+    width: 680rpx;
+    /* min-height: 520rpx; */
+    background: #ffffff;
+    padding: 33rpx 40rpx;
+    margin-bottom: 38rpx;
+}
+
+.other-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.time {
+    font-size: 28rpx;
+    font-family: SourceHanSansCN;
+    font-weight: 400;
+    color: #8692a4;
+}
+
+.read-num {
+    font-size: 28rpx;
+    font-family: SourceHanSansCN;
+    font-weight: 400;
+    color: #fe4a4a;
+}
+
+.title {
+    color: #4096ff;
+    font-size: 36rpx;
+    font-weight: 600;
+    /*1.先强制一行内显示文本*/
+    white-space: nowrap;
+    /*2.超出的部分隐藏*/
+    overflow: hidden;
+    /*3.文字用省略号替代超出的部分*/
+    text-overflow: ellipsis;
+}
+
+.img {
+    width: 100%;
+    height: 16rpx;
+}

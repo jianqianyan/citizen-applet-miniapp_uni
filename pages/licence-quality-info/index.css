@@ -1,0 +1,60 @@
+/* pages/licence-quality-info/index.wxss */
+.quality-info-wrapper {
+    position: relative;
+}
+.profile-cotent-wrapper {
+    position: absolute;
+    transform: translate(-50%, 37rpx);
+    /* top: 325rpx; */
+    left: 50%;
+}
+.profile-info {
+    width: 680rpx;
+    /* min-height: 520rpx; */
+    background: #ffffff;
+    padding: 15rpx 35rpx 48rpx;
+    margin-bottom: 38rpx;
+}
+
+.profile-title {
+    font-size: 34rpx;
+    font-family: SourceHanSansCN;
+    font-weight: 400;
+    color: #3e77ff;
+}
+
+.filed {
+    display: flex;
+    align-items: center;
+    padding: 13rpx 11rpx;
+    border-bottom: 1rpx solid #dedede;
+}
+.filed-column {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.filed-content {
+    flex: 1;
+    min-height: 50rpx;
+    font-size: 26rpx;
+    font-family: SourceHanSansCN;
+    font-weight: 400;
+    color: #8692a4;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.last-filed {
+    border-bottom: none;
+    padding: 13rpx 11rpx 0rpx;
+}
+
+.label {
+    font-size: 28rpx;
+    font-family: SourceHanSansCN;
+    font-weight: 400;
+    color: #666666;
+}

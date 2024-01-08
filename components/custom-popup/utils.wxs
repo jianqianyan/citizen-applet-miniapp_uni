@@ -1,0 +1,14 @@
+function translate( offsetX , offsetY ) {
+  return 'transform:translate(' + offsetX + "%" + "," +  offsetY +  '%);'
+}
+function scale( scale ) {
+  return 'transform:scale(' + scale +  ');'
+}
+function radios( postion ) {
+
+}
+module.exports = {
+  translate:translate,
+  scale:scale,
+  radios:radios
+}

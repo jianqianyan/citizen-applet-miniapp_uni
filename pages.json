@@ -1,0 +1,231 @@
+{
+  "pages": [
+    {
+      "path": "pages/index/index",
+      "style": {
+        "usingComponents": {
+          "custom-tab-panel": "../../components/custom-tab-panel/index",
+          "custom-popup": "../../components/custom-popup/index"
+        },
+        "navigationBarTitleText": "首页",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/temporary-index/index",
+      "style": {
+        "usingComponents": {},
+        "navigationBarTitleText": "提示"
+      }
+    },
+    {
+      "path": "pages/tab-MyAdvice/index",
+      "style": {
+        "usingComponents": {},
+        "navigationBarTitleText": "我的咨询",
+        "enablePullDownRefresh": true,
+        "backgroundTextStyle": "dark"
+      }
+    },
+    {
+      "path": "pages/tab-MyCenter/index",
+      "style": {
+        "usingComponents": {
+          "custom-popup": "../../components/custom-popup/index"
+        },
+        "navigationBarTitleText": "个人中心"
+      }
+    },
+    {
+      "path": "pages/profile/index",
+      "style": {
+        "usingComponents": {},
+        "navigationBarTitleText": "个人信息"
+      }
+    },
+    {
+      "path": "pages/buying-drug-details/index",
+      "style": {
+        "usingComponents": {},
+        "navigationBarTitleText": "购药详情"
+      }
+    },
+    {
+      "path": "pages/licence-quality-info/index",
+      "style": {
+        "usingComponents": {},
+        "navigationBarTitleText": "许可证资质信息"
+      }
+    },
+    {
+      "path": "pages/drugSore-detail/index",
+      "style": {
+        "usingComponents": {},
+        "navigationBarTitleText": "",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/drug-ascend-detail/index",
+      "style": {
+        "usingComponents": {
+          "custom-collapse": "../../components/custom-collapse/index",
+          "custom-collapse-item": "../../components/custom-collapse-item/index"
+        },
+        "navigationBarTitleText": "药品追溯详情"
+      }
+    },
+    {
+      "path": "pages/buying-drug-reg/index",
+      "style": {
+        "usingComponents": {
+          "custom-popup": "../../components/custom-popup/index",
+          "custom-area-picker": "../../components/custom-area-picker/index"
+        },
+        "navigationBarTitleText": "购药登记"
+      }
+    },
+    {
+      "path": "pages/drug-ascend/index",
+      "style": {
+        "usingComponents": {},
+        "navigationBarTitleText": "药品追溯"
+      }
+    },
+    {
+      "path": "pages/advice-chat/index",
+      "style": {
+        "usingComponents": {},
+        "navigationBarTitleText": "我要咨询"
+      }
+    },
+    {
+      "path": "pages/drug-details/index",
+      "style": {
+        "usingComponents": {},
+        "navigationBarTitleText": "药品详情"
+      }
+    },
+    {
+      "path": "pages/medicine-inquire/index",
+      "style": {
+        "usingComponents": {},
+        "navigationBarTitleText": "查询"
+      }
+    },
+    {
+      "path": "pages/buying-drug-store/index",
+      "style": {
+        "usingComponents": {},
+        "navigationBarTitleText": "药店商品"
+      }
+    },
+    {
+      "path": "pages/nearby-drug-store/index",
+      "style": {
+        "usingComponents": {
+          "custom-popup": "../../components/custom-popup/index"
+        },
+        "navigationBarTitleText": ""
+      }
+    },
+    {
+      "path": "pages/tab-drug-knowledge/index",
+      "style": {
+        "usingComponents": {
+          "custom-tab-panel": "../../components/custom-tab-panel/index"
+        },
+        "navigationBarTitleText": "药品咨询服务"
+      }
+    },
+    {
+      "path": "pages/buying-drug-record/index",
+      "style": {
+        "usingComponents": {},
+        "navigationBarTitleText": "购药记录"
+      }
+    },
+    {
+      "path": "pages/drug-knowledge/index",
+      "style": {
+        "usingComponents": {},
+        "navigationBarTitleText": "药品知识"
+      }
+    },
+    {
+      "path": "pages/temporary-buying-reg/index",
+      "style": {
+        "usingComponents": {
+          "custom-popup": "../../components/custom-popup/index",
+          "custom-area-picker": "../../components/custom-area-picker/index"
+        },
+        "navigationBarTitleText": "购药登记"
+      }
+    },
+    {
+      "path": "pages/drug-goods-ascend-detail/index",
+      "style": {
+        "usingComponents": {},
+        "navigationBarTitleText": "药品追溯详情"
+      }
+    },
+    {
+      "path": "pages/about/about",
+      "style": {
+        "usingComponents": {},
+        "navigationBarTitleText": "关于我们"
+      }
+    },
+    {
+      "path": "pages/drug-illustrate/index",
+      "style": {
+        "usingComponents": {},
+        "navigationBarTitleText": "药品说明"
+      }
+    }
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息用于搜索附近药店信息"
+    }
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "static/images/tab_icons/index.png",
+        "selectedIconPath": "static/images/tab_icons/index_active.png"
+      },
+      {
+        "pagePath": "pages/tab-drug-knowledge/index",
+        "text": "药品知识",
+        "iconPath": "static/images/tab_icons/drugstore.png",
+        "selectedIconPath": "static/images/tab_icons/drugstore_active.png"
+      },
+      {
+        "pagePath": "pages/tab-MyAdvice/index",
+        "text": "我的咨询",
+        "iconPath": "static/images/tab_icons/myAdvice.png",
+        "selectedIconPath": "static/images/tab_icons/myAdvice_active.png"
+      },
+      {
+        "pagePath": "pages/tab-MyCenter/index",
+        "text": "个人中心",
+        "iconPath": "static/images/tab_icons/my_cenetr.png",
+        "selectedIconPath": "static/images/tab_icons/my_cenetr_active.png"
+      }
+    ],
+    "selectedColor": "#5187fe"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "globalStyle": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#0990ff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#f1f1f1"
+  },
+  "subPackages": []
+}

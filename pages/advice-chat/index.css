@@ -1,0 +1,237 @@
+/* pages/advice-chat/index.wxss */
+page {
+    overflow: hidden;
+}
+
+.container {
+    /* position: relative; */
+    height: 100vh;
+    overflow: hidden;
+}
+
+.chat-record {
+    background-color: #f8f8f8;
+    /* padding-bottom: 363rpx; */
+    transform: rotate(180deg);
+}
+
+.chat-history-list {
+    /* height: 100%; */
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    /* transform: rotate(-180deg); */
+    padding: 60rpx 40rpx 10rpx;
+}
+
+.chat-history-list-item {
+    display: flex;
+    /* align-items: start baseline; */
+    flex-direction: column;
+    margin-bottom: 63rpx;
+    transform: rotate(180deg);
+}
+.chat-message-wrapper {
+    display: flex;
+    align-items: start baseline;
+}
+
+.chat-send-time {
+    margin-bottom: 25rpx;
+    text-align: center;
+}
+.chat-send-time > text {
+    display: inline-block;
+    min-width: 100rpx;
+    text-align: center;
+    background-color: #666666;
+    opacity: 0.15;
+    padding: 8rpx 10rpx;
+    color: #ffffff;
+    font-size: 28rpx;
+    border-radius: 5rpx;
+}
+
+.other {
+    flex-direction: row;
+}
+
+.myself {
+    flex-direction: row-reverse;
+}
+.myself .review-info {
+    background: linear-gradient(0deg, #0c9bff, #0066ff);
+    margin-right: 30rpx;
+    border-radius: 40rpx 0 40rpx 40rpx;
+    color: #ffffff;
+}
+.other .review-info {
+    background: #ffffff;
+    margin-left: 30rpx;
+    color: #666666;
+    border-radius: 0 40rpx 40rpx 40rpx;
+}
+
+.review-info {
+    max-width: 500rpx;
+    flex-shrink: 0;
+    box-shadow: 0px 0px 13px 0px rgba(58, 92, 241, 0.27);
+    padding: 26rpx;
+    /* min-height: 80rpx; */
+    display: flex;
+    align-items: center;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.send-image-wrapper {
+    width: 250rpx;
+    height: 250rpx;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.user-avatar {
+    width: 89rpx;
+    height: 87rpx;
+    overflow: hidden;
+    margin-bottom: 14rpx;
+}
+
+.user-name {
+    font-size: 18rpx;
+    font-family: SourceHanSansCN;
+    font-weight: 400;
+    color: #666666;
+}
+
+/* 底部栏 */
+.chat-review-wrapper {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+    background: #e7e8ef;
+    padding: 34rpx;
+    transition: all 0.33333s cubic-bezier(0.18, 1.01, 0.51, 0.99);
+    padding-bottom: constant(safe-area-inset-bottom);
+    padding-bottom: env(safe-area-inset-bottom);
+}
+
+.input-wrapper {
+    flex: 1;
+    height: 88rpx;
+    background: #ffffff;
+    border-radius: 16rpx;
+}
+
+.input-wrapper > input {
+    padding-left: 25rpx;
+}
+
+.advice-chat-wrapper {
+    height: 100%;
+}
+
+.chat-flex {
+    display: flex;
+    align-items: center;
+}
+
+/* 操作栏功能区 */
+.panel-list {
+    margin-top: 47rpx;
+    display: flex;
+    align-items: center;
+    padding: 0 48rpx;
+}
+
+.panel-list-item {
+    width: 60rpx;
+    height: 120rpx;
+    display: flex;
+    flex-direction: column;
+    margin-right: 88rpx;
+    justify-content: space-between;
+    position: relative;
+}
+
+.panel-list-iten-image {
+    width: 60rpx;
+    height: 54rpx;
+}
+
+.panel-list-item > text {
+    font-size: 28rpx;
+    color: #a1a1a1;
+}
+
+.style {
+    height: 34rpx;
+    background: #e7e8ef;
+}
+
+.more-panel {
+    width: 45rpx;
+    height: 45rpx;
+    margin-left: 34rpx;
+}
+
+.holder {
+    width: 100%;
+    height: 150rpx;
+    background: #e7e8ef;
+}
+.icon-box-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 15rpx;
+}
+
+.bubble-holder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: #2F2F2F; */
+    opacity: 0;
+}
+
+.loading-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 15rpx;
+}
+
+.loading {
+    border: 10rpx solid #e6e6e6;
+    border-radius: 50%;
+    border-top: 10rpx solid #0990ff;
+    width: 50rpx;
+    height: 50rpx;
+    -webkit-animation: spin 1s linear infinite;
+    animation: spin 1s linear infinite;
+}
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

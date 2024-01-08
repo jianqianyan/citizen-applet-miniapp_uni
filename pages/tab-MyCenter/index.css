@@ -1,0 +1,133 @@
+/* holder */
+.holder {
+    width: 100%;
+    height: 82rpx;
+}
+
+/*背景视图*/
+.background-view {
+    width: 100%;
+    height: 252.5rpx;
+}
+
+/* 用户信息栏 */
+.user-wrapper {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    top: 180rpx;
+    left: 50%;
+    transition: all 0.2s;
+    display: flex;
+}
+.user-wrapper .user-info {
+    display: flex;
+    align-items: center;
+    padding: 0 42rpx;
+    width: 100%;
+}
+.user-info .user-avatar {
+    width: 106rpx;
+    height: 106rpx;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 29rpx;
+}
+.user-info .user-name {
+    font-size: 36rpx;
+    font-family: SourceHanSansCN;
+    font-weight: 400;
+    flex: 1;
+    color: #ffffff;
+}
+.user-info .user-logout {
+    width: 45rpx;
+    height: 45rpx;
+    line-height: 42rpx;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 50%;
+}
+.user-logout > text {
+    font-size: 32rpx;
+    color: #489fff;
+}
+
+/* 登录按钮 */
+.login-button {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+}
+.login-button button {
+    display: inline-block;
+    font-family: SourceHanSansCN !important;
+    font-weight: 400;
+    color: #0a91ff;
+    width: 200rpx !important;
+    height: 78rpx;
+    line-height: 78rpx;
+    background: #ffffff;
+    border-radius: 16rpx;
+    transition: background 0.2s;
+}
+.login-button button:active {
+    background: #f1f1f1;
+}
+
+/* 菜单列表 */
+.menu-list-wrapper {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 365rpx;
+    left: 50%;
+    border-radius: 16rpx;
+    overflow: hidden;
+}
+.menu-list {
+    width: 680rpx;
+    height: 200rpx;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.menu-list-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 25%;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+}
+.menu-icon {
+    width: 65rpx;
+    height: 65rpx;
+}
+.menu-icon image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.menu-title {
+    margin-top: 12rpx;
+    font-size: 22rpx;
+    font-family: SourceHanSansCN;
+    font-weight: 400;
+    color: #4a4a4a;
+}
+
+.getPhone-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.reset-phone-button-style {
+    border-radius: 16rpx;
+    background: #0990ff;
+    color: #ffffff;
+    font-size: 28rpx;
+}
