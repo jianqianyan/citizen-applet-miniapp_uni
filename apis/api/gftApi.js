@@ -335,3 +335,12 @@ export const getDrugPage = (data) => gftRequest('yjydidhqzsyp', data)
 
 // 根据药品名称获取零售该药品的药店信息
 export const getStorePage = (data) => gftRequest('yjypmchqydxx', data)
+
+/**
+ * @description 获取可以语音播报的信息
+ * @param { number } pageSize
+ * @param { number } pageNum
+ * @param { string } keyword
+ *
+ */
+export const getDrugToDescList = (data) => gftRequest('yjyplbcx', data)

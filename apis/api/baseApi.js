@@ -401,3 +401,12 @@ export const getUserProfile = (userId) =>
     },
     true
   );
+
+/**
+* @description 获取可以语音播报的信息
+* @param { number } pageSize
+* @param { number } pageNum
+* @param { string } keyword
+*
+*/
+export const getDrugToDescList = (data) => myRequest.get('/api/drug-medicine/wx/getWxInsPage', data);

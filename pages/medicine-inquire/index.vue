@@ -387,7 +387,7 @@
 </template>
 <script module="format" lang="wxs" src="@/wxsFormat/format.wxs"></script>
 <script>
-import Api from "../../apis/apis"
+import Api from "../../apis/apis";
 import * as util from "../../common/common";
 import { _debounce } from "../../utils/util";
 import { IMAGE_BASE_URL, BASE_URL } from "../../common/config";
@@ -854,13 +854,24 @@ export default {
     },
 
     //查询药品信息
+    //查询药品信息
     getDrugList() {
       let { keyWord, drugSearches, isEmpty } = this;
-      util.Loading();
-      Api.getDrugList({
+      let params = {
         ...drugSearches,
         keyWord,
-      })
+      };
+      if (this.voiceStatus) {
+        this.getToDescList(params, isEmpty, keyWord);
+      } else {
+        this.getList(params, isEmpty, keyWord);
+      }
+    },
+
+    // 获取直接查询的药品信息
+    getList(params, isEmpty, keyWord) {
+      util.Loading();
+      Api.getDrugList(params)
         .then((res) => {
           if (res.data.code !== 200) {
             return util
@@ -892,6 +903,57 @@ export default {
           });
         })
         .catch((err) => {
+          console.log(err);
+          util
+            .Toast({
+              title: "请求失败，获取搜索结果失败",
+            })
+            .then((res) => {
+              if (isEmpty) {
+                this.setData({
+                  isEmpty: false,
+                });
+              }
+            });
+        });
+    },
+
+    // 获取可以语音播报的药品信息
+    getToDescList(params, isEmpty, keyWord) {
+      util.Loading();
+      Api.getDrugToDescList(params)
+        .then((res) => {
+          if (res.data.code !== 200) {
+            return util
+              .Toast({
+                title: "请求失败，获取搜索结果失败",
+              })
+              .then(() => {
+                if (isEmpty) {
+                  this.setData({
+                    isEmpty: false,
+                  });
+                }
+              });
+          }
+
+          //设置缓存
+          this.handleSearchCache(keyWord);
+          util.HideLoading();
+          let {
+            data: { records: searchResOfDurgList, total: drugTotal },
+          } = res.data;
+          this.setData({
+            searchResOfDurgList: [
+              ...this.searchResOfDurgList,
+              ...searchResOfDurgList,
+            ],
+            drugTotal,
+            isEmpty: searchResOfDurgList.length !== 0 ? true : false,
+          });
+        })
+        .catch((err) => {
+          console.log(err);
           util
             .Toast({
               title: "请求失败，获取搜索结果失败",
@@ -939,10 +1001,15 @@ export default {
     //前往药品详情
     toDurgDel(event) {
       let { drugItem } = event.target.dataset;
-      console.log(drugItem);
-      uni.navigateTo({
-        url: `/pages/drug-details/index?drugDel=${JSON.stringify(drugItem)}`,
-      });
+      if (this.voiceStatus) {
+        uni.navigateTo({
+          url: `/pages/drug-illustrate/index?drugDel=${drugItem.instructionsId}`,
+        });
+      } else {
+        uni.navigateTo({
+          url: `/pages/drug-details/index?drugDel=${JSON.stringify(drugItem)}`,
+        });
+      }
     },
 
     //前往药店详情

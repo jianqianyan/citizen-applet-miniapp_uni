@@ -63,9 +63,9 @@ export const regionName = '江西省'
 export const version = '1.0'
 
 // 是否为赣服通环境
-export const isGFT = true
+export const isGFT = false
 
 // 是否需要登录
-export const needLogin = true
+export const needLogin = false
 
 export { myRequest, IMAGE_BASE_URL, BASE_URL, cryptoKey, IMAGE_URL };
