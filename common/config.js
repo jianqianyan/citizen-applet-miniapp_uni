@@ -23,13 +23,13 @@ export const regionName = '江西省'
 export const version = '1.0'
 
 // 是否为赣服通环境
-export const isGFT = true
+export const isGFT = false
 
 // 是否需要登录
-export const needLogin = true
+export const needLogin = false
 
 // 是否为h5环境
-export const isH5 = false
+export const isH5 = true
 
 
 // 请求拦截器

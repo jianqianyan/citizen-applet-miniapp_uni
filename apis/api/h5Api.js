@@ -36,7 +36,7 @@ import { gftRequest } from "../../common/gftRequest"
  * @param { string } regionCode 区域码
  */
 export const addRegister = (data) =>
-  myRequest.post(`/API/api/drug-anti-epidemic-drug-sales/add-register`, data, true, {
+  myRequest.post(`/SLHAPI/api/drug-anti-epidemic-drug-sales/add-register`, data, true, {
     'content-type': 'application/json',
     'Authorization': 'Bearer ' + uni.getStorageSync('access_token')
   });
@@ -44,7 +44,7 @@ export const addRegister = (data) =>
 /**
  * @description 字典获取新冠抗疫药品分类
  */
-export const getCOVID_19DrugTypeList = (data) => myRequest.get(`/API/dictItems/itemlist-new/dictCode`, data, true, {
+export const getCOVID_19DrugTypeList = (data) => myRequest.get(`/SLHAPI/dictItems/itemlist-new/dictCode`, data, true, {
   'Authorization': 'Bearer ' + uni.getStorageSync('access_token')
 });
 
@@ -52,7 +52,7 @@ export const getCOVID_19DrugTypeList = (data) => myRequest.get(`/API/dictItems/i
  * @description 根据用户id查询用户新冠购药登记最新的输入身份信息
  * @param { string } citizenUserId
  */
-export const getLastRegInfo = (data) => myRequest.get(`/API/api/drug-anti-epidemic-drug-sales/get-user-newest-register/citizen-user-id`, data, true, {
+export const getLastRegInfo = (data) => myRequest.get(`/SLHAPI/api/drug-anti-epidemic-drug-sales/get-user-newest-register/citizen-user-id`, data, true, {
   'Authorization': 'Bearer ' + uni.getStorageSync('access_token')
 });
 
@@ -60,7 +60,7 @@ export const getLastRegInfo = (data) => myRequest.get(`/API/api/drug-anti-epidem
  * @description 获取区域信息
  * @param { string } regionCode
  */
-export const getRegion = (data) => myRequest.get('/API/area/getDirectlyLowerRegion', data, true, {
+export const getRegion = (data) => myRequest.get('/SLHAPI/area/getDirectlyLowerRegion', data, true, {
   'Authorization': 'Bearer ' + uni.getStorageSync('access_token')
 });
 
@@ -68,14 +68,14 @@ export const getRegion = (data) => myRequest.get('/API/area/getDirectlyLowerRegi
  * @description 根据企业Id获取企业、药店信息
  * @param { string  } enterpriseId
  */
-export const getInfoByEnterprise = (data) => myRequest.get('/API/api/drug-store/getInfoByEnterpriseId', data, true, {
+export const getInfoByEnterprise = (data) => myRequest.get('/SLHAPI/api/drug-store/getInfoByEnterpriseId', data, true, {
   'Authorization': 'Bearer ' + uni.getStorageSync('access_token')
 });
 
 /**
  * @description 补充药店region信息
  */
-export const updateTownship = (data) => myRequest.post('/API/api/drug-store/updateTownship', data, true, {
+export const updateTownship = (data) => myRequest.post('/SLHAPI/api/drug-store/updateTownship', data, true, {
   'Authorization': 'Bearer ' + uni.getStorageSync('access_token')
 });
 
@@ -93,18 +93,18 @@ export const updateTownship = (data) => myRequest.post('/API/api/drug-store/upda
  * @param { string } regionCode 区域码
  *
  */
-export const getDrugStoreList = (data) => myRequest.get('/API/api/drug-store/wx/get-page', data);
+export const getDrugStoreList = (data) => myRequest.get('/SLHAPI/api/drug-store/wx/get-page', data);
 
 /**
  * @description 获取首页轮播
  */
-export const getBanner = () => myRequest.get('/API/api/banner/getBannerList');
+export const getBanner = () => myRequest.get('/SLHAPI/api/banner/getBannerList');
 
 /**
  * @description 药店获取特色标签字典
  */
 export const getDrugFeatureLabel = () =>
-  myRequest.get(`/API/dictItems/itemlistWx/FEATURE_LABEL`, {
+  myRequest.get(`/SLHAPI/dictItems/itemlistWx/FEATURE_LABEL`, {
     dictCode: 'FEATURE_LABEL'
   });
 
@@ -112,7 +112,7 @@ export const getDrugFeatureLabel = () =>
  * @description 药店获取特色服务字典
  */
 export const getDrugFeatureService = () =>
-  myRequest.get(`/API/dictItems/itemlistWx/FEATURE_SERVICE`, {
+  myRequest.get(`/SLHAPI/dictItems/itemlistWx/FEATURE_SERVICE`, {
     dictCode: 'FEATURE_SERVICE'
   });
 
@@ -120,7 +120,7 @@ export const getDrugFeatureService = () =>
  * @description 药店获取便民服务标签字典
  */
 export const getDurgHandyService = () =>
-  myRequest.get(`/API/dictItems/itemlistWx/HANDY_SERVICE`, {
+  myRequest.get(`/SLHAPI/dictItems/itemlistWx/HANDY_SERVICE`, {
     dictCode: 'HANDY_SERVICE'
   });
 
@@ -128,30 +128,30 @@ export const getDurgHandyService = () =>
  * @description 药品知识获取顶部导航标签字典
  */
 export const getDrugKnowledgeService = () =>
-  myRequest.get(`/API/dictItems/itemlistWx/DRUG_KNOWLEDGE_SERVICE_TYPE`, {
+  myRequest.get(`/SLHAPI/dictItems/itemlistWx/DRUG_KNOWLEDGE_SERVICE_TYPE`, {
     dictCode: 'DRUG_KNOWLEDGE_SERVICE_TYPE'
   });
 
 /**
  * @description 药品知识的列表
  */
-export const getDrugKnowledgeList = (data) => myRequest.get(`/API/api/drug-knowledge-serve/wx/getWxPage`, data);
+export const getDrugKnowledgeList = (data) => myRequest.get(`/SLHAPI/api/drug-knowledge-serve/wx/getWxPage`, data);
 
 /**
  * @description 药品知识的详情
  */
-export const getDrugKnowledgeDetail = (data) => myRequest.get(`/API/api/drug-knowledge-serve/wx/get-by-id-new/id`, data);
+export const getDrugKnowledgeDetail = (data) => myRequest.get(`/SLHAPI/api/drug-knowledge-serve/wx/get-by-id-new/id`, data);
 
 /**
  * @description 药品知识阅读量
  */
-export const getDrugKnowledgReading = (data) => myRequest.get(`/API/api/drug-knowledge-serve/wx/increaseRead-new/id`, data);
+export const getDrugKnowledgReading = (data) => myRequest.get(`/SLHAPI/api/drug-knowledge-serve/wx/increaseRead-new/id`, data);
 
 /**
  * @description 获取个人中心购药记录
  * @param { string } citizenUserId
  */
-export const getDrugPurchaseRecord = (citizenUserId) => myRequest.get(`/API/api/drug-anti-epidemic-drug-sales/get-applet-sales-record-page`, citizenUserId, true,
+export const getDrugPurchaseRecord = (citizenUserId) => myRequest.get(`/SLHAPI/api/drug-anti-epidemic-drug-sales/get-applet-sales-record-page`, citizenUserId, true,
   {
     'Authorization': 'Bearer ' + uni.getStorageSync('access_token')
   });
@@ -160,7 +160,7 @@ export const getDrugPurchaseRecord = (citizenUserId) => myRequest.get(`/API/api/
  * @description 获取药店详情
  * @param { string } id
  */
-export const getDrugStoreDetails = (id) => myRequest.get(`/API/api/drug-store/wx/get-info-new/id`, id);
+export const getDrugStoreDetails = (id) => myRequest.get(`/SLHAPI/api/drug-store/wx/get-info-new/id`, id);
 
 /**
  * @description 药品列表查询
@@ -169,25 +169,25 @@ export const getDrugStoreDetails = (id) => myRequest.get(`/API/api/drug-store/wx
  * @param { string } keyword
  *
  */
-export const getDrugList = (data) => myRequest.get('/API/api/drug-medicine/wx/getWxPage', data);
+export const getDrugList = (data) => myRequest.get('/SLHAPI/api/drug-medicine/wx/getWxPage', data);
 
 /**
  * @description 获取药品详情
  * @param { stirng } id
  */
-export const getDrugDel = (id) => myRequest.get(`/API/api/drug-medicine/wx/get-by-id-new/id`, id);
+export const getDrugDel = (id) => myRequest.get(`/SLHAPI/api/drug-medicine/wx/get-by-id-new/id`, id);
 
 /**
  * @description 获取许可证资质信息
  * @param { string } enterpriseId
  */
-export const getlicenceMessage = (enterpriseId) => myRequest.get(`/API/api/certificate-info/getWxList`, enterpriseId);
+export const getlicenceMessage = (enterpriseId) => myRequest.get(`/SLHAPI/api/certificate-info/getWxList`, enterpriseId);
 
 /**
  * @description 获取药店详情执业药师信息
  * @param { string } enterpriseId
  */
-export const getLicensedPharmacist = (enterpriseId) => myRequest.get(`/API/api/drug-pharmacist/getWxPage`, enterpriseId);
+export const getLicensedPharmacist = (enterpriseId) => myRequest.get(`/SLHAPI/api/drug-pharmacist/getWxPage`, enterpriseId);
 
 /**
  * @description 获取药店商品
@@ -195,36 +195,36 @@ export const getLicensedPharmacist = (enterpriseId) => myRequest.get(`/API/api/d
  * @param { number } pageNum
  * @param { string } enterpriseId
  */
-export const getDrugstoreGoods = (data) => myRequest.get(`/API/api/drug-medicine/wx/getOnSaleMedicineByEnterprise`, data);
+export const getDrugstoreGoods = (data) => myRequest.get(`/SLHAPI/api/drug-medicine/wx/getOnSaleMedicineByEnterprise`, data);
 /*
  * @description 获取药品关联的在售药店列表
  *
  */
-export const getOnsaleDrugstoreList = (data) => myRequest.get('/API/api/drug-store/wx/get-onsale-page', data);
+export const getOnsaleDrugstoreList = (data) => myRequest.get('/SLHAPI/api/drug-store/wx/get-onsale-page', data);
 
 /**
  * @description 获取热门药品
  *
  */
-export const getHotMedicine = () => myRequest.get('/API/api/drug-medicine/wx/getHotMedicine');
+export const getHotMedicine = () => myRequest.get('/SLHAPI/api/drug-medicine/wx/getHotMedicine');
 
 /**
  * @description 获取附近药店信息列表
  *
  */
-export const getNearbyDrugstoreList = (data) => myRequest.get('/API/api/drug-store/wx/get-nearby-page', data);
+export const getNearbyDrugstoreList = (data) => myRequest.get('/SLHAPI/api/drug-store/wx/get-nearby-page', data);
 
 /**
  * @description 根据药品追溯码查询药品追溯详情
  *
  */
-export const getProInfoByDtc = (tcCode) => myRequest.get('/API/api/ali-review/getInfoByDtc', tcCode);
+export const getProInfoByDtc = (tcCode) => myRequest.get('/SLHAPI/api/ali-review/getInfoByDtc', tcCode);
 
 /**
  * @description 根据商品码以及生产批号查询药品追溯详情
  *
  */
-export const getProInfoByCommodityCode = (data) => myRequest.get('/API/api/ali-review/getProInfoByCommodityCode', data);
+export const getProInfoByCommodityCode = (data) => myRequest.get('/SLHAPI/api/ali-review/getProInfoByCommodityCode', data);
 
 /**
  * @description 根据扫码结果获取药品名称
@@ -232,7 +232,7 @@ export const getProInfoByCommodityCode = (data) => myRequest.get('/API/api/ali-r
  */
 export const getDrugName = (code) =>
   myRequest.get(
-    `/API/api/drug-medicine/get-by-code-new/code`,
+    `/SLHAPI/api/drug-medicine/get-by-code-new/code`,
     {
       code
     },
@@ -246,7 +246,7 @@ export const getDrugName = (code) =>
  *
  */
 export const getMultilevelRegion = (proRegionId) =>
-  myRequest.get(`/API/area/areaLevelWx`, {
+  myRequest.get(`/SLHAPI/area/areaLevelWx`, {
     proRegionId
   });
 
@@ -263,7 +263,7 @@ export const getMultilevelRegion = (proRegionId) =>
  *
  */
 export const createConsult = (data) =>
-  myRequest.post(`/API/api/drug-consult/add-consult`, data, true, {
+  myRequest.post(`/SLHAPI/api/drug-consult/add-consult`, data, true, {
     'content-type': 'application/json',
     'Authorization': 'Bearer ' + uni.getStorageSync('access_token')
   });
@@ -276,7 +276,7 @@ export const createConsult = (data) =>
  */
 export const getConsultedList = ({ citizenId, pageNum, pageSize }) =>
   myRequest.get(
-    `/API/api/drug-consult/page-new/citizen-id`,
+    `/SLHAPI/api/drug-consult/page-new/citizen-id`,
     {
       citizenId,
       pageNum,
@@ -302,7 +302,7 @@ export const getConsultedList = ({ citizenId, pageNum, pageSize }) =>
  * @param { String } writtenWords 文字内容
  */
 export const sendMessageOfConsult = (data) =>
-  myRequest.post(`/API/api/drug-leaving-message/add-message`, data, true, {
+  myRequest.post(`/SLHAPI/api/drug-leaving-message/add-message`, data, true, {
     'content-type': 'application/json',
     'Authorization': 'Bearer ' + uni.getStorageSync('access_token')
   });
@@ -316,7 +316,7 @@ export const sendMessageOfConsult = (data) =>
  */
 export const getChattingRecordsOfCosult = ({ donsultId, pageNum, pageSize }) =>
   myRequest.get(
-    `/API/api/drug-leaving-message/page-new/donsult-id`,
+    `/SLHAPI/api/drug-leaving-message/page-new/donsult-id`,
     {
       donsultId,
       pageNum,
@@ -333,7 +333,7 @@ export const getChattingRecordsOfCosult = ({ donsultId, pageNum, pageSize }) =>
  */
 export const getDonsultDel = (id) =>
   myRequest.get(
-    `/API/api/drug-consult/get-consult-new/id`,
+    `/SLHAPI/api/drug-consult/get-consult-new/id`,
     {
       id
     },
@@ -355,7 +355,7 @@ export const txmapapi = (data) => gftRequest('txmapapi', data)
 // 根据药店ID获取在售药品
 export const getDrugPage = (data) =>
   myRequest.post(
-    `/API/api/drug-stock-info-wx/get-drug-page-wx`,
+    `/SLHAPI/api/drug-stock-info-wx/get-drug-page-wx`,
     data,
     false, {
       'content-type': 'application/json',
@@ -365,7 +365,7 @@ export const getDrugPage = (data) =>
 // 根据药品名称获取零售该药品的药店信息
 export const getStorePage = (data) =>
   myRequest.post(
-    `/API/api/drug-stock-info-wx/get-store-page-wx`,
+    `/SLHAPI/api/drug-stock-info-wx/get-store-page-wx`,
     data,
     true, {
     'content-type': 'application/json',
@@ -376,18 +376,18 @@ export const getStorePage = (data) =>
  *
  * @description 登录
  */
-export const Login = (data) => myRequest.post('/API/oauth/token', data, true);
+export const Login = (data) => myRequest.post('/SLHAPI/oauth/token', data, true);
 
 /**
  *
  * @description 注册
  */
-export const register = (data) => myRequest.post('/API/api/user/third/register', data, true);
+export const register = (data) => myRequest.post('/SLHAPI/api/user/third/register', data, true);
 
 /**
  * @description 解密
  */
-export const dc = (data) => myRequest.post('/API/api/user/third/dc', data, true);
+export const dc = (data) => myRequest.post('/SLHAPI/api/user/third/dc', data, true);
 
 /**
  * @description 获取用户信息
@@ -395,7 +395,7 @@ export const dc = (data) => myRequest.post('/API/api/user/third/dc', data, true)
  */
 export const getUserProfile = (userId) =>
   myRequest.get(
-    '/API/user/getUserInfo',
+    '/SLHAPI/user/getUserInfo',
     {
       userId
     },
@@ -409,15 +409,15 @@ export const getUserProfile = (userId) =>
 * @param { string } keyword
 *
 */
-export const getDrugToDescList = (data) => myRequest.get('/API/api/drug-medicine/wx/getWxInsPage', data);
+export const getDrugToDescList = (data) => myRequest.get('/SLHAPI/api/drug-medicine/wx/getWxInsPage', data);
 
 /**
  * 获取药品说明
  * @param {*} data
  */
-export const getDruDesc = (data) => myRequest.get('/API/api/drug-medicine/wx/getinsdesc-by-id', data)
+export const getDruDesc = (data) => myRequest.get('/SLHAPI/api/drug-medicine/wx/getinsdesc-by-id', data)
 
 // 获取语音播报接口
-export const getVoiceSrc = (data) => myRequest.post('/Voice/run/predict', data, false, {
+export const getVoiceSrc = (data) => myRequest.post('/SLHVoice/run/predict', data, false, {
   'content-type': 'application/json',
 })
