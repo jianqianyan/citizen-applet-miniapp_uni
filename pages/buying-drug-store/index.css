@@ -178,8 +178,7 @@
   background: #ffffff;
   padding: 30rpx;
   box-sizing: border-box;
-  border-bottom: rgba(0, 0, 0, 0.05) 1px solid
-  ;
+  border-bottom: rgba(0, 0, 0, 0.05) 1px solid;
 }
 
 .drug-store-pic {
@@ -188,6 +187,10 @@
   overflow: hidden;
   margin: 15rpx 21rpx 15rpx 15rpx;
   border-radius: 16rpx;
+}
+
+.drug-bus-time-info {
+  margin: 28rpx 0 0 0;
 }
 
 .drug-bus-time-info>text {

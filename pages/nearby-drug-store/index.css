@@ -203,6 +203,8 @@
 .drug-store-info {
     /* flex: 1; */
     /* padding-right: 29rpx; */
+    height: 214rpx;
+    padding: 30rpx 0;
     display: flex;
     flex-direction: column;
 }

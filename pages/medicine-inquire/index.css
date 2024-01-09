@@ -280,12 +280,12 @@
 }
 
 .drug-store-pic {
-    width: 201rpx;
-    height: 214rpx;
-    overflow: hidden;
-    margin-right: 15rpx;
-    border-radius: 16rpx;
-    flex-shrink: 0;
+  width: 201rpx;
+  height: 214rpx;
+  overflow: hidden;
+  margin-right: 15rpx;
+  border-radius: 16rpx;
+  flex-shrink: 0;
 }
 
 .drug-store-info {
@@ -293,6 +293,8 @@
     /* padding-right: 29rpx; */
     display: flex;
     flex-direction: column;
+    height: 214rpx;
+    padding: 30rpx 0;
 }
 
 .drug-store-address {
@@ -344,7 +346,8 @@
 }
 
 .drug-other-right {
-    flex-basis: 25%;
+  flex-basis: 25%;
+  flex-shrink: 0;
 }
 
 /* 营业时间 */
@@ -379,10 +382,14 @@
     margin-top: 19rpx;
 }
 .drug-bus-address-info {
-    font-size: 26rpx;
-    font-family: SourceHanSansCN;
-    font-weight: 400;
-    color: #8692a4;
+  font-size: 28rpx;
+  font-family: SourceHanSansCN;
+  font-weight: 400;
+  color: #8692a4;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
 }
 .drug-dist {
     text-align: right;

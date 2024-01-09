@@ -22,9 +22,6 @@
         <!-- 药品名称 -->
         <view class="filed filed-column">
           <view class="label">{{ drugDel.drugGenericName }}</view>
-          <!-- <view class="filed-content drug-title-reset">
-            <text class="medicare-label">医保</text>
-          </view> -->
         </view>
         <!-- 药品名称 END -->
 
@@ -115,17 +112,6 @@
                     <text class="iconfont icon-jiantou"></text>
                   </view>
                   <!-- 详细地址及图片信息 END -->
-
-                  <!-- 标签 -->
-                  <view class="drug-label-wrapper">
-                    <block
-                      v-for="(tag, tagIndex) in drugstoreItem.featureLabel"
-                      :key="tagIndex"
-                    >
-                      <text class="medicare-label">{{ tag }}</text>
-                    </block>
-                  </view>
-                  <!-- 标签 END -->
 
                   <!-- 药店其他信息 -->
                   <view class="drug-other-wrapper">

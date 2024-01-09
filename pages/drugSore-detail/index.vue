@@ -23,11 +23,6 @@
       <view class="profile-info shadow-wrapper">
         <view class="profile-title">{{ drugStoreDelInfo.enterpriseName }}</view>
         <view class="drug-store-label-wrapper filed">
-          <view class="drug-label-wrapper">
-            <block v-for="(label, index) in drugStoreDelInfo.featureLabel" :key="index">
-              <text class="medicare-label">{{ label }}</text>
-            </block>
-          </view>
           <!-- <view class="buying-register" @tap.stop.prevent="toBuyingRegister">购药登记</view> -->
         </view>
         <!-- 营业时间 -->

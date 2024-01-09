@@ -30,14 +30,6 @@
           <view class="profile-title">{{
             toDrugStoreList.enterpriseName
           }}</view>
-          <view class="label-list-wrapper">
-            <block
-              v-for="(item, index) in toDrugStoreList.featureLabel"
-              :key="index"
-            >
-              <view class="medicare-label">{{ item }}</view>
-            </block>
-          </view>
           <view class="drug-bus-time-info">
             <text class="icon-shizhong iconfont drug-bus-time-icon"></text>
             <block
