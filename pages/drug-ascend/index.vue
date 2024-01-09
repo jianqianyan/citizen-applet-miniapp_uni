@@ -15,22 +15,6 @@
           <view>提交</view>
         </view>
       </view>
-      <view class="profile-info shadow-wrapper">
-        <view class="scancode">
-          <view class="profile-title">商品码</view>
-          <text class="iconfont icon-saoma" @tap.stop.prevent="handleScancodeByCommodityCode"></text>
-        </view>
-        <view class="scancode-input-wrapper">
-          <input type="text" placeholder="请输入商品码或扫一扫药品上的商品码" v-model="commodityCode" />
-        </view>
-        <view class="scancode-input-wrapper">
-          <input type="text" placeholder="请输入生产批号信息" v-model="batch" />
-        </view>
-        <view class="button-wrapper" @tap="getProInfoByCommodityCode">
-          <!-- <button size="mini">提交</button> -->
-          <view>提交</view>
-        </view>
-      </view>
     </view>
     <MyFooter></MyFooter>
   </view>
