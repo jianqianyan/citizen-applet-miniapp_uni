@@ -1,0 +1,379 @@
+.drua-description-small {
+  display: flex;
+  justify-content: center;
+  padding: 25rpx 0;
+  box-sizing: border-box;
+  /*单选按钮选中后内部样式*/
+}
+.drua-description-small .drua-description-nei {
+  width: 96%;
+}
+.drua-description-small .top_box {
+  width: 96%;
+  position: fixed;
+  z-index: 9;
+  top: 75rpx;
+  padding: 30rpx 0;
+}
+.drua-description-small .listening_box {
+  width: 100%;
+  /* height: 110rpx; */
+  border-radius: 60rpx;
+  background-color: #2151f5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25rpx 28rpx;
+  box-sizing: border-box;
+  box-shadow: 0 0 20rpx #3d6aff;
+}
+.drua-description-small .laba {
+  width: 56rpx;
+  height: 56rpx;
+}
+.drua-description-small .listening_right {
+  width: 56rpx;
+  height: 56rpx;
+}
+.drua-description-small .listening {
+  color: #ffffff;
+  font-size: 38rpx;
+  font-weight: bold;
+  letter-spacing: 6rpx;
+}
+.drua-description-small .desc-holder {
+  height: 150rpx;
+}
+.drua-description-small .fontSize-box {
+  display: flex;
+  align-items: center;
+}
+.drua-description-small .fontSize-box2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.drua-description-small .fontSize-box2 .wzb {
+  width: 22%;
+  display: flex;
+  justify-content: center;
+  padding: 12rpx 0;
+  border-radius: 20rpx;
+  background-color: #2151f5;
+  color: #fff;
+  font-size: 30rpx;
+}
+.drua-description-small .fontSize-box2 .f-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25%;
+}
+.drua-description-small .fontSize-box2 .f-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25%;
+  font-size: 36rpx;
+  font-weight: 600;
+}
+.drua-description-small .f-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 49%;
+}
+.drua-description-small .f-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 49%;
+  font-size: 48rpx;
+  font-weight: 600;
+}
+.drua-description-small radio .wx-radio-input {
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 100%;
+  background-color: none;
+  border: 4rpx solid #dfdfdf;
+}
+.drua-description-small radio .wx-radio-input.wx-radio-input-checked {
+  border: 4rpx solid #2150f4 !important;
+  background-color: #2150f4 !important;
+}
+.drua-description-small radio .wx-radio-input.wx-radio-input-checked::before {
+  width: 34rpx;
+  height: 34rpx;
+  border-radius: 100%;
+  font-size: 34rpx;
+  /* 对勾大小 */
+  color: white;
+  background-color: #2150f4 !important;
+}
+.drua-description-small .line {
+  border-right: 2rpx solid #dfdfdf;
+  height: 50rpx;
+}
+.drua-description-small .name_box {
+  padding: 40rpx 0 30rpx 0;
+  box-sizing: border-box;
+}
+.drua-description-small .drua-name {
+  font-size: 48rpx;
+  font-weight: 600;
+  margin-bottom: 20rpx;
+}
+.drua-description-small .drua-company {
+  font-weight: 600;
+}
+.drua-description-small .drua-desc {
+  text-align: justify;
+}
+.drua-description-small .name_box view {
+  line-height: 54rpx;
+}
+.drua-description-small .tis_box {
+  width: 100%;
+  border: 6rpx solid #2150f4;
+  border-radius: 20rpx;
+  position: relative;
+  margin: 40rpx 0;
+  padding: 40rpx 40rpx 40rpx 40rpx;
+  box-sizing: border-box;
+}
+.drua-description-small .Tips-box {
+  position: absolute;
+  top: -55rpx;
+  left: -6rpx;
+}
+.drua-description-small .tis-img {
+  width: 220rpx;
+}
+.drua-description-small .Tips {
+  font-size: 40rpx;
+  color: #fff;
+  position: relative;
+  top: -85rpx;
+  left: 15rpx;
+}
+.drua-description-small .content_box {
+  background-color: rgba(0, 142, 255, 0.2);
+}
+.drua-description-small .title-box {
+  display: flex;
+  align-items: center;
+  margin: 40rpx 0 15rpx 0;
+}
+.drua-description-small .t-img {
+  width: 50rpx;
+  margin-right: 15rpx;
+}
+.drua-description-small .title-text {
+  font-size: 38rpx;
+  font-weight: 600;
+}
+.drua-description-small .desc-text {
+  line-height: 50rpx;
+}
+.drua-description-small .file_box {
+  margin-bottom: 35rpx;
+  color: #2150f4;
+}
+.drua-description-small .bottom-text {
+  text-align: center;
+}
+.drua-description-big {
+  display: flex;
+  justify-content: center;
+  padding: 25rpx 0;
+  box-sizing: border-box;
+  /*单选按钮选中后内部样式*/
+}
+.drua-description-big .drua-description-nei {
+  width: 96%;
+}
+.drua-description-big .top_box {
+  width: 96%;
+  position: fixed;
+  z-index: 9;
+  top: 75rpx;
+  padding: 30rpx 0;
+}
+.drua-description-big .listening_box {
+  width: 100%;
+  /* height: 110rpx; */
+  border-radius: 60rpx;
+  background-color: #2151f5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25rpx 28rpx;
+  box-sizing: border-box;
+  box-shadow: 0 0 20rpx #3d6aff;
+}
+.drua-description-big .laba {
+  width: 66rpx;
+  height: 66rpx;
+}
+.drua-description-big .listening_right {
+  width: 66rpx;
+  height: 66rpx;
+}
+.drua-description-big .listening {
+  color: #ffffff;
+  font-size: 44rpx;
+  font-weight: bold;
+  letter-spacing: 6rpx;
+}
+.drua-description-big .desc-holder {
+  height: 150rpx;
+}
+.drua-description-big .fontSize-box {
+  display: flex;
+  align-items: center;
+}
+.drua-description-big .fontSize-box2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.drua-description-big .fontSize-box2 .wzb {
+  width: 22%;
+  display: flex;
+  justify-content: center;
+  padding: 12rpx 0;
+  border-radius: 20rpx;
+  background-color: #2151f5;
+  color: #fff;
+  font-size: 30rpx;
+}
+.drua-description-big .fontSize-box2 .f-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25%;
+}
+.drua-description-big .fontSize-box2 .f-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25%;
+  font-size: 36rpx;
+  font-weight: 600;
+}
+.drua-description-big .f-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 49%;
+}
+.drua-description-big .f-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 49%;
+  font-size: 48rpx;
+  font-weight: 600;
+}
+.drua-description-big radio .wx-radio-input {
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 100%;
+  background-color: none;
+  border: 4rpx solid #dfdfdf;
+}
+.drua-description-big radio .wx-radio-input.wx-radio-input-checked {
+  border: 4rpx solid #2150f4 !important;
+  background-color: #2150f4 !important;
+}
+.drua-description-big radio .wx-radio-input.wx-radio-input-checked::before {
+  width: 34rpx;
+  height: 34rpx;
+  border-radius: 100%;
+  font-size: 34rpx;
+  /* 对勾大小 */
+  color: white;
+  background-color: #2150f4 !important;
+}
+.drua-description-big .line {
+  border-right: 2rpx solid #dfdfdf;
+  height: 50rpx;
+}
+.drua-description-big .name_box {
+  padding: 40rpx 0 30rpx 0;
+  box-sizing: border-box;
+}
+.drua-description-big .drua-name {
+  font-size: 56rpx;
+  font-weight: 600;
+  margin-bottom: 20rpx;
+}
+.drua-description-big .drua-company {
+  font-size: 44rpx;
+  font-weight: 550;
+}
+.drua-description-big .drua-desc {
+  font-size: 44rpx;
+  text-align: justify;
+}
+.drua-description-big .name_box view {
+  line-height: 65rpx;
+}
+.drua-description-big .tis_box {
+  width: 100%;
+  border: 6rpx solid #2150f4;
+  border-radius: 20rpx;
+  position: relative;
+  margin: 40rpx 0;
+  padding: 40rpx 40rpx 40rpx 40rpx;
+  box-sizing: border-box;
+}
+.drua-description-big .Tips-box {
+  position: absolute;
+  top: -55rpx;
+  left: -6rpx;
+}
+.drua-description-big .tis-img {
+  width: 220rpx;
+}
+.drua-description-big .Tips {
+  font-size: 44rpx;
+  color: #fff;
+  position: relative;
+  top: -85rpx;
+  left: 15rpx;
+}
+.drua-description-big .title-box {
+  display: flex;
+  align-items: center;
+  margin: 40rpx 0 15rpx 0;
+}
+.drua-description-big .t-img {
+  width: 60rpx;
+  margin-right: 15rpx;
+}
+.drua-description-big .title-text {
+  font-size: 44rpx;
+  font-weight: 600;
+}
+.drua-description-big .desc-text,
+.drua-description-big .desc-text p,
+.drua-description-big .desc-text span,
+.drua-description-big .desc-text p span {
+  font-size: 44rpx;
+  line-height: 65rpx;
+}
+.drua-description-big .file_box {
+  font-size: 44rpx;
+  margin-bottom: 35rpx;
+  text-align: justify;
+  color: #2150f4;
+}
+.drua-description-big .bottom-text {
+  font-size: 44rpx;
+  text-align: center;
+}
+.drua-description-big .content_box {
+  background-color: rgba(0, 142, 255, 0.2);
+}

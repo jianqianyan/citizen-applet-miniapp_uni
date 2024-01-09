@@ -78,6 +78,16 @@ export const uploadImage = function ({ url = '', count = 1, type } = {}) {
     }
 };
 
+export function generateRandomString() {  
+  const chars = 'abcdefghijklmnopqrstuvwxyz0123456789';  
+  let result = '';  
+  for (let i = 0; i < 11; i++) {  
+      const randomIndex = Math.floor(Math.random() * chars.length);  
+      result += chars[randomIndex];  
+  }  
+  return result;  
+} 
+
 // export const _observe = function (target = {}) {
 //     if (Object.keys(target).length === 0) {
 //         return

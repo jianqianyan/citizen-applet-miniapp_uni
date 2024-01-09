@@ -1,3 +1,4 @@
+import { myRequest } from '../../common/config'
 import { gftRequest } from "../../common/gftRequest"
 
 /**
@@ -337,10 +338,21 @@ export const getDrugPage = (data) => gftRequest('yjydidhqzsyp', data)
 export const getStorePage = (data) => gftRequest('yjypmchqydxx', data)
 
 /**
- * @description 获取可以语音播报的信息
- * @param { number } pageSize
- * @param { number } pageNum
- * @param { string } keyword
- *
+* @description 获取可以语音播报的信息
+* @param { number } pageSize
+* @param { number } pageNum
+* @param { string } keyword
+*
+*/
+export const getDrugToDescList = (data) => myRequest.get('/api/drug-medicine/wx/getWxInsPage', data);
+
+/**
+ * 获取药品说明
+ * @param {*} data
  */
-export const getDrugToDescList = (data) => gftRequest('yjyplbcx', data)
+export const getDruDesc = (data) => myRequest.get('/api/drug-medicine/wx/getinsdesc-by-id', data);
+
+// 获取语音播报接口
+export const getVoiceSrc = (data) => myRequest.post('/Voice/run/predict', data, false, {
+  'content-type': 'application/json',
+})

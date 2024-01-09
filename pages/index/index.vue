@@ -257,12 +257,6 @@ export default {
           style: "drug-ascend",
           url: "/pages/drug-ascend/index",
         },
-        {
-          icon: "tab_index_icons/fangda.png",
-          title: "药品说明",
-          style: "drug-illustrate",
-          url: "/pages/medicine-inquire/index?type=0&state=1",
-        },
       ],
 
       //tab栏
@@ -354,6 +348,14 @@ export default {
     };
   },
   async onLoad() {
+    if (!this.isGFT) {
+      this.menuList.push({
+        icon: "tab_index_icons/fangda.png",
+        title: "药品说明",
+        style: "drug-illustrate",
+        url: "/pages/medicine-inquire/index?type=0&state=1",
+      });
+    }
     util.Loading();
 
     //首次请求市区级数据

@@ -357,7 +357,7 @@ export const getDrugPage = (data) =>
   myRequest.post(
     `/api/drug-stock-info-wx/get-drug-page-wx`,
     data,
-    true, {
+    false, {
     'content-type': 'application/json',
   }
   );
@@ -410,3 +410,14 @@ export const getUserProfile = (userId) =>
 *
 */
 export const getDrugToDescList = (data) => myRequest.get('/api/drug-medicine/wx/getWxInsPage', data);
+
+/**
+ * 获取药品说明
+ * @param {*} data
+ */
+export const getDruDesc = (data) => myRequest.get('/api/drug-medicine/wx/getinsdesc-by-id', data);
+
+// 获取语音播报接口
+export const getVoiceSrc = (data) => myRequest.post('/Voice/run/predict', data, false, {
+  'content-type': 'application/json',
+})
